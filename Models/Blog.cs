@@ -6,12 +6,19 @@ namespace WebApp.Models
     public class Blog
     {
         public int ID { get; set; }
+
         public string Title { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
+
         public string Content { get; set; }
 
-        public decimal Price { get; set; }
+        public int Owner { get; set; }
+
+        public DateTime Created { get; set; }
+
+        public DateTime Updated { get; set; }
+
     }
 }
